@@ -1,0 +1,45 @@
+.coins {
+    margin-top: 45px;
+}
+
+.coins h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+.coins_content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #f3d9ff;
+    border-radius: 20px;
+    width: 350px;
+    height: 40px;
+    padding: 10px 15px;
+}
+
+.coins_content h1 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.coins_content button {
+    border-radius: 20px;
+    padding: 5px 20px;
+    width: 158px;
+    height: 25px;
+    background: #1fa344;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+    transition: all .3s;
+}
+
+.coins_content button:hover {
+    background: #eac2ff;
+    color: #333333;
+}

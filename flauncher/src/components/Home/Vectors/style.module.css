@@ -1,0 +1,18 @@
+.vec {
+    position: absolute;
+    width: 300px;
+    z-index: -1;
+    top: 0;
+    left: 900px;
+
+    user-select: none;
+}
+
+.vec2 {
+    z-index: -1;
+    position: absolute;
+    height: 250px;
+    top: 400px;
+
+    user-select: none;
+}

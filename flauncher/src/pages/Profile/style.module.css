@@ -1,0 +1,19 @@
+.vector {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 750px;
+}
+
+.line {
+    border: 1px solid #b8becc;
+    width: 147px;
+    height: 0;
+    margin-top: 10px;
+}
+
+.art {
+    position: absolute;
+    left: 460px;
+    bottom: 0;
+}

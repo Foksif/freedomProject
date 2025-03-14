@@ -1,0 +1,65 @@
+.security {
+    margin-top: 35px;
+}
+
+.security h1 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+.security_email {
+    display: block;
+    margin-top: 15px;
+}
+
+.security_email h1 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+
+.security_email p {
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #000;
+}
+
+.security_password {
+    margin-top: 10px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.security_password h1 {
+    font-weight: 500;
+    font-size: 17px;
+    color: #000;
+}
+
+.security_password button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 102px;
+    height: 35px;
+    background: #e5b2ff;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    border: none;
+    transition: all .3s;
+}
+
+.security_password button:hover {
+    background: #e485ff;
+}
+
+.line {
+    border: 1px solid #b8becc;
+    width: 147px;
+    height: 0;
+    margin-top: 10px;
+}

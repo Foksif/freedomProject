@@ -1,0 +1,16 @@
+.art {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+
+    user-select: none;
+}
+
+.launch {
+    position: absolute;
+
+    top: 530px;
+    left: 800px;
+    z-index: 10;
+}
