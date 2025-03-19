@@ -14,10 +14,7 @@ export declare class UserController {
         updatedAt: Date;
         roles: import(".prisma/client").$Enums.Roles[];
     }[]>;
-    findMe(token: string): Promise<{
-        user: any;
-        isValid: boolean;
-    }>;
+    findMe(token: string): Promise<UserResponse>;
     validToken(token: string): Promise<{
         isValid: boolean;
     } | undefined>;

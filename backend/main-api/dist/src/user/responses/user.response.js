@@ -21,8 +21,4 @@ __decorate([
     (0, class_transformer_1.Exclude)(),
     __metadata("design:type", String)
 ], UserResponse.prototype, "password", void 0);
-__decorate([
-    (0, class_transformer_1.Exclude)(),
-    __metadata("design:type", Date)
-], UserResponse.prototype, "createdAt", void 0);
 //# sourceMappingURL=user.response.js.map

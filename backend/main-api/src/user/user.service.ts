@@ -42,7 +42,9 @@ export class UserService {
 
     getMe(token: string) {
         const tokenData = this.jwtService.verify(token);
-        return {"user": tokenData, "isValid": true};
+        const { id } = tokenData;
+        const profileData = this.findOne(id)
+        return profileData;
     }
 
     validToken(token: string) {

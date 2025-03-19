@@ -1,0 +1,8 @@
+# FDP_Playerlimiter
+
+max-players: 50
+allowed-permission: "fdp.playerlimit.bypass"
+kick-message:
+  - "&cFDP | Сервер заполнен!"
+  - "&eПопробуйте зайти позже."
+  - "&aИли приобретите премиум."

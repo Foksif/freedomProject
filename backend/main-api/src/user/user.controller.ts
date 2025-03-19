@@ -52,7 +52,9 @@ export class UserController {
             token = token.replace('Bearer ', '');
         }
 
-        return this.userService.getMe(token);
+        const profile = await this.userService.getMe(token);
+
+        return new UserResponse(<User>profile);
     }
 
     @Public()

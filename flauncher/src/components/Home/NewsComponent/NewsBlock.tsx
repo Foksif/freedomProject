@@ -6,7 +6,7 @@ import {INews} from "../../../types/news.type.ts";
 const placeholderImage = "https://i.pinimg.com/736x/7e/a1/90/7ea190a9e0f8caa40c88fdb3868ff15a.jpg";
 
 const NewsBlock: React.FC = () => {
-    const { data }  = useNews(placeholderImage)
+    const { data } = useNews(placeholderImage)
 
     return (
         <div className={styles.newsContainer}>

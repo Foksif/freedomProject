@@ -1,0 +1,5 @@
+name: FDP_Playerlimiter
+version: '0.3'
+main: me.foksik.fDP_Playerlimiter.FDP_Playerlimiter
+api-version: '1.21'
+authors: [foksik]

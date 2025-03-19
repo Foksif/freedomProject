@@ -39,7 +39,8 @@ let UserController = class UserController {
         if (token.startsWith('Bearer ')) {
             token = token.replace('Bearer ', '');
         }
-        return this.userService.getMe(token);
+        const profile = await this.userService.getMe(token);
+        return new responses_1.UserResponse(profile);
     }
     async validToken(token) {
         if (!token) {

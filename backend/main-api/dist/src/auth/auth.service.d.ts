@@ -8,8 +8,8 @@ export declare class AuthService {
     private readonly logger;
     constructor(userService: UserService, jwtService: JwtService);
     register(dto: RegisterDto): Promise<{
-        name: string;
         id: string;
+        name: string;
         email: string;
         password: string;
         createdAt: Date;
