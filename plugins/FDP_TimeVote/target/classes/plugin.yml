@@ -1,0 +1,12 @@
+name: FDP_TimeVote
+version: '0.2.2'
+main: me.foksik.fDP_TimeVote.FDP_TimeVote
+api-version: '1.21'
+authors: [foksik]
+commands:
+  votetime:
+    description: Начать голосование за смену времени суток.
+    usage: /votetime
+  vote:
+    description: Проголосовать за или против.
+    usage: /vote <yes|no>

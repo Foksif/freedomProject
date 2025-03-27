@@ -1,0 +1,9 @@
+name: FDP_CommandBlocker
+version: '0.1'
+main: me.foksik.fDP_CommandBlocker.FDP_CommandBlocker
+api-version: '1.21'
+authors: [ foksik ]
+permissions:
+  fdp.commandblocker.notify:
+    description: Получать уведомления о заблокированных командах
+    default: op

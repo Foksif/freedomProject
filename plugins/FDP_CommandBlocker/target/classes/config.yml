@@ -1,0 +1,13 @@
+messages:
+  command-blocked: "&cЭта команда запрещена на этом сервере."
+  admin-notify: "&cИгрок {player} попытался выполнить заблокированную команду: /{command}"
+
+blocked-commands:
+  - "ban"
+  - "kick"
+  - "op"
+  - "deop"
+  - "gamemode"
+  - "tp"
+  - "pl"
+  - "plugins"
