@@ -1,0 +1,11 @@
+name: FDP_Items
+version: '0.1.2'
+main: me.foksik.fDP_Items.FDP_Items
+api-version: '1.21'
+authors: [ foksik ]
+commands:
+  fdpitems:
+    description: Gives FDP items
+    usage: /fdpitems give <item>
+    permission: fdpitems.command
+    permission-message: You don't have permission to use this command!

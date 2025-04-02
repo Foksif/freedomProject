@@ -1,0 +1,5 @@
+name: FDP_apiCheck
+version: '0.1'
+main: me.foksik.fDP_apiCheck.FDP_apiCheck
+api-version: '1.21'
+authors: [ foksik ]
