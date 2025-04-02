@@ -14,11 +14,19 @@
     "allowlist": {
       "all": false,
       "fs": {
-        "all": true
+        "all": true,
+        "scope": [
+          "$APPDATA/.neosoft",
+          "$HOME/AppData/Roaming/.neosoft",
+          "$HOME/AppData/Roaming/**"
+        ]
       },
       "shell": {
         "all": true,
         "open": true
+      },
+      "path": {
+        "all": true
       }
     },
     "windows": [

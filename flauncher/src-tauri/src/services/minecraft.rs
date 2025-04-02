@@ -4,7 +4,7 @@ use tauri::State;
 use crate::state::AppState;
 use std::env;
 
-pub fn start_minecraft(state: State<Arc<AppState>>) -> Result<String, String> {
+pub fn start_minecraft(state: State<Arc<AppState>>, nickname: String) -> Result<String, String> {
     let user_name = env::var("USERNAME").unwrap_or_else(|_| String::from("default_user"));
 
     let mut process_lock = state.minecraft_process.lock().unwrap();
@@ -12,8 +12,12 @@ pub fn start_minecraft(state: State<Arc<AppState>>) -> Result<String, String> {
         return Err("Minecraft уже запущен.".to_string());
     }
 
-    let param = "foksik ".to_owned() + &user_name;
-    let command = format!(r#"C:\Users\{}\AppData\Roaming\.neosoft\launch.bat {}"#, user_name, param);
+    let param = format!("{} {}", nickname, user_name);
+    let command = format!(
+        r#"C:\Users\{}\AppData\Roaming\.neosoft\launch.bat {}"#,
+        user_name,
+        param
+    );
 
     let child = Command::new("cmd")
         .arg("/C")

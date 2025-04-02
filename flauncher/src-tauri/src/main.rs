@@ -6,15 +6,21 @@ mod commands;
 mod services;
 
 use state::AppState;
-use commands::{run_minecraft, check_minecraft, check_file_exists};
+use commands::{run_minecraft, check_minecraft, check_file_exists, extract_zip};
+use std::sync::Arc;
+use tauri::State;
 
 fn main() {
-
     let app_state = AppState::new();
 
     tauri::Builder::default()
         .manage(app_state)
-        .invoke_handler(tauri::generate_handler![run_minecraft, check_minecraft, check_file_exists])
+        .invoke_handler(tauri::generate_handler![
+            run_minecraft,
+            check_minecraft,
+            check_file_exists,
+            extract_zip,
+        ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
